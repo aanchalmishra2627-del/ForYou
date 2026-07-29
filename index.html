@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just One Question ❤️</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:90%;
+    max-width:450px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+.yes{background:#4CAF50;color:white;}
+.no{background:#f44336;color:white;}
+#message{
+    margin-top:20px;
+    font-size:18px;
+    white-space:pre-line;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>❤️ Do you love me? ❤️</h2>
+
+    <button class="yes" onclick="yes()">Yes</button>
+    <button class="no" onclick="no()">No</button>
+
+    <div id="message"></div>
+</div>
+
+<script>
+function yes(){
+document.getElementById("message").innerHTML =
+`❤️ Thank you for everything you've done for me, babu.
+
+I'm so grateful for every memory we've created together, and I can't wait to make many more in the future.
+
+I hope we always stay like this—through every laugh, every little fight, and every moment of love.
+
+No matter what, I'll always choose you.
+
+I love you so much. ❤️`;
+}
+
+function no(){
+document.getElementById("message").innerHTML =
+"🥺 Still I love U Ganda Babu ❤️";
+}
+</script>
+
+</body>
+</html>
